@@ -23,6 +23,7 @@ async function onResults(results) {
         color: "#FF0000",
         lineWidth: 2,
       });
+
       const arrow = await getPredictedLabel(landmarks);
       if (arrow) {
         triggerArrowKey("keydown", arrow);
